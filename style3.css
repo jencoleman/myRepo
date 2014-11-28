@@ -1,0 +1,110 @@
+* {
+font-family: sans-serif;
+}
+
+a:link {
+color: #666666;
+text-decoration: none;
+}
+
+a:visited {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px;
+}
+
+#header{
+background-color: #3A5795;
+height: 100px;
+width: 800px;
+border-bottom: 1px solid #1C326C;
+}
+
+#heading {
+font-size: 50px;
+font-weight: bold;
+color: #FFFFFF;
+padding-left: 15px;
+padding-top:15px;
+}
+
+#signin {
+font-size: 20px;
+color: #8D9EB0;
+padding-right: 15px;
+float: right;
+}
+#aside {
+height: 550px;
+width: 398px;
+background-color: #EDF0F5;
+border: 1px solid #B6B7B8;
+float: left;
+}
+
+#partner {
+font-size: 45px;
+text-align: center;
+color: #333333;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.zap{
+font-size: 20px;
+padding-left: 30px;
+padding-bottom: 20px;
+}
+
+#section {
+height: 550px;
+width: 399px;
+background-color: #EDF0F5;
+border-top: 1px solid #B6B7B8;
+border-bottom: 1px solid #B6B7B8;
+border-right: 1px solid #B6B7B8;
+float: left;
+text-align: center;
+}
+#signup {
+font-size: 45px;
+color: #333350;
+text-align: center;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+form {
+vertical-align: middle;
+}
+
+input {
+padding: 10px;
+border-radius: 5px;
+display: inline-block;
+width: 200px;
+margin-bottom: 10px;
+vertical-align: middle;
+}
+
+#footer {
+height: 50px;
+width: 783px;
+font-size:14px;
+position: absolute;
+left: 0;
+bottom: 0;
+border: 1px solid #B6B7B8;
+padding-top: 15px;
+padding-left: 15px;
+}
