@@ -47,9 +47,11 @@ float: right;
 }
 #aside {
 height: 550px;
-width: 398px;
+width: 399px;
 background-color: #EDF0F5;
-border: 1px solid #B6B7B8;
+border-bottom: 1px solid #B6B7B8;
+border-left:1px solid #B6B7B8;
+border-top:1px solid #B6B7B8;
 float: left;
 }
 
@@ -98,6 +100,7 @@ vertical-align: middle;
 }
 
 #footer {
+background-color: white;
 height: 50px;
 width: 783px;
 font-size:14px;
