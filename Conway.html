@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="Initialize.css">
+</head>
+
+<body>
+	
+	<div id="header">Conway's Game of Life</div>
+	
+	<!--Left side where the control buttons and additional information go-->
+	<div id="section1">Welcome to Game of Life! This is how it works.</div>
+	
+	<!--Right side where the game runs-->
+	<div id="section2">
+	
+		<!--wrapper-->
+		<div id="grid">
+		
+			<!-- Column 1-->
+			<div id="c1" class="column">
+				<div id="c1r1" class="cell">lorem</div>
+				<div id="c1r2" class="cell">ipsum</div>
+				<div id="c1r3" class="cell"></div>
+				<div id="c1r4" class="cell"></div>
+				<div id="c1r5" class="cell"></div>
+				<div id="c1r6" class="cell"></div>
+				<div id="c1r7" class="cell"></div>
+				<div id="c1r8" class="cell"></div>
+				<div id="c1r9" class="cell"></div>
+				<div id="c1r10" class="cell" ></div>
+			</div>
+			
+			<!--Column 2-->
+			<div id="c2" class="column">
+				<div id="c2r1" class="cell"></div>
+				<div id="c2r2" class="cell"></div>
+				<div id="c2r3" class="cell"></div>
+				<div id="c2r4" class="cell"></div>
+				<div id="c2r5" class="cell"></div>
+				<div id="c2r6" class="cell"></div>
+				<div id="c2r7" class="cell"></div>
+				<div id="c2r8" class="cell"></div>
+				<div id="c2r9" class="cell"></div>
+				<div id="c2r10" class="cell" ></div>
+			</div>
+			
+			<!--Column 3-->
+			<div id="c3" class="column">
+				<div id="c3r1" class="cell"></div>
+				<div id="c3r2" class="cell"></div>
+				<div id="c3r3" class="cell"></div>
+				<div id="c3r4" class="cell"></div>
+				<div id="c3r5" class="cell"></div>
+				<div id="c3r6" class="cell"></div>
+				<div id="c3r7" class="cell"></div>
+				<div id="c3r8" class="cell"></div>
+				<div id="c3r9" class="cell"></div>
+				<div id="c3r10" class="cell" ></div>
+			</div>
+			
+			<!--Column 4-->
+			<div id="c4" class="column">
+				<div id="c4r1" class="cell"></div>
+				<div id="c4r2" class="cell"></div>
+				<div id="c4r3" class="cell"></div>
+				<div id="c4r4" class="cell"></div>
+				<div id="c4r5" class="cell"></div>
+				<div id="c4r6" class="cell"></div>
+				<div id="c4r7" class="cell"></div>
+				<div id="c4r8" class="cell"></div>
+				<div id="c4r9" class="cell"></div>
+				<div id="c4r10" class="cell" ></div>
+			</div>
+			
+			<!--Column 5-->
+			<div id="c5" class="column">
+				<div id="c5r1" class="cell"></div>
+				<div id="c5r2" class="cell"></div>
+				<div id="c5r3" class="cell"></div>
+				<div id="c5r4" class="cell"></div>
+				<div id="c5r5" class="cell"></div>
+				<div id="c5r6" class="cell"></div>
+				<div id="c5r7" class="cell"></div>
+				<div id="c5r8" class="cell"></div>
+				<div id="c5r9" class="cell"></div>
+				<div id="c5r10" class="cell" ></div>
+			</div>
+			
+			<!-- Column 6-->
+			<div id="c6" class="column">
+				<div id="c6r1" class="cell">lorem</div>
+				<div id="c6r2" class="cell">ipsum</div>
+				<div id="c6r3" class="cell"></div>
+				<div id="c6r4" class="cell"></div>
+				<div id="c6r5" class="cell"></div>
+				<div id="c6r6" class="cell"></div>
+				<div id="c6r7" class="cell"></div>
+				<div id="c6r8" class="cell"></div>
+				<div id="c6r9" class="cell"></div>
+				<div id="c6r10" class="cell" ></div>
+			</div>
+			
+			<!--Column 7-->
+			<div id="c7" class="column">
+				<div id="c7r1" class="cell"></div>
+				<div id="c7r2" class="cell"></div>
+				<div id="c7r3" class="cell"></div>
+				<div id="c7r4" class="cell"></div>
+				<div id="c7r5" class="cell"></div>
+				<div id="c7r6" class="cell"></div>
+				<div id="c7r7" class="cell"></div>
+				<div id="c7r8" class="cell"></div>
+				<div id="c7r9" class="cell"></div>
+				<div id="c7r10" class="cell" ></div>
+			</div>
+			
+			<!--Column 8-->
+			<div id="c8" class="column">
+				<div id="c8r1" class="cell"></div>
+				<div id="c8r2" class="cell"></div>
+				<div id="c8r3" class="cell"></div>
+				<div id="c8r4" class="cell"></div>
+				<div id="c8r5" class="cell"></div>
+				<div id="c8r6" class="cell"></div>
+				<div id="c8r7" class="cell"></div>
+				<div id="c8r8" class="cell"></div>
+				<div id="c8r9" class="cell"></div>
+				<div id="c8r10" class="cell" ></div>
+			</div>
+			
+			<!--Column 9-->
+			<div id="c9" class="column">
+				<div id="c9r1" class="cell"></div>
+				<div id="c9r2" class="cell"></div>
+				<div id="c9r3" class="cell"></div>
+				<div id="c9r4" class="cell"></div>
+				<div id="c9r5" class="cell"></div>
+				<div id="c9r6" class="cell"></div>
+				<div id="c9r7" class="cell"></div>
+				<div id="c9r8" class="cell"></div>
+				<div id="c9r9" class="cell"></div>
+				<div id="c9r10" class="cell" ></div>
+			</div>
+			
+			<!--Column 10-->
+			<div id="c10" class="column">
+				<div id="c10r1" class="cell"></div>
+				<div id="c10r2" class="cell"></div>
+				<div id="c10r3" class="cell"></div>
+				<div id="c10r4" class="cell"></div>
+				<div id="c10r5" class="cell"></div>
+				<div id="c10r6" class="cell"></div>
+				<div id="c10r7" class="cell"></div>
+				<div id="c10r8" class="cell"></div>
+				<div id="c10r9" class="cell"></div>
+				<div id="c10r10" class="cell" ></div>
+			</div>
+		
+		</div>
+	</div>
+
+</body>
+
+
+</html>
