@@ -1,0 +1,35 @@
+#header {
+color: green;
+width: 500px;
+height: 50px;
+background-color: yellow;
+}
+
+#section1 {
+width: 500px;
+height: 150px;
+background-color: beige;
+float: left;
+}
+
+#section2 {
+width: 500px;
+height: 600px;
+float: left;
+}
+
+.cell {
+height: 50px;
+width: 50px;
+background-color: green;
+}
+
+.grid:after { 
+content: "";
+display: table;
+clear: both;
+}
+
+.column {
+float: left;
+}
