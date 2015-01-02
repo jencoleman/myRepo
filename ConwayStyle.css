@@ -1,19 +1,19 @@
 #header {
 color: green;
-width: 500px;
+width: 800px;
 height: 50px;
 background-color: yellow;
 }
 
 #section1 {
-width: 500px;
+width: 800px;
 height: 150px;
 background-color: beige;
 float: left;
 }
 
 #section2 {
-width: 500px;
+width: 800px;
 height: 600px;
 float: left;
 }
