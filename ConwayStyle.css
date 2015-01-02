@@ -24,7 +24,7 @@ width: 50px;
 background-color: green;
 }
 
-.grid:after { 
+#grid:after { 
 content: "";
 display: table;
 clear: both;
