@@ -70,13 +70,13 @@ setHtml();
 //5th one
 var content = "";
 
-var someFunction = function() {
+var someFunction = function(a, b) {
 
-	for (i = 0; i < 10 ; i++) {
+	for (i = 0; i < a ; i++) {
 
 		content += "<div id=\"c" + i + "\" class=\"column\">";
 
-		for ( z = 0; z < 10; z++) {
+		for ( z = 0; z < b; z++) {
 
 			content +=("<div id=\"c" + i + "r" + z + "\" class=\"cell\">lorem</div>");
 
