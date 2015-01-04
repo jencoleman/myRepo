@@ -1,3 +1,4 @@
+//1st one
 var content = function() {
 }
 	for (i = 0; i < 10 ; i++) {
@@ -12,6 +13,7 @@ var content = function() {
 
 document.getElementById("grid").innerHTML = content();
 
+//2nd one
 var content = "";
 
 var someFunction = function() {
@@ -27,6 +29,8 @@ var someFunction = function() {
 
 document.getElementById("grid").innerHTML = content;
 
+
+//3rd one
 function setHtml() {
 var content = "";
 var elem = document.getElementById("grid");
@@ -44,6 +48,7 @@ content.push("</div>");
 
 setHtml();
 
+//4th one
 function setHtml() {
 var content = "";
 var elem = document.getElementById("grid");
@@ -61,3 +66,28 @@ content += "</div>";
 
 setHtml();
 
+//5th one
+var content = "";
+
+var someFunction = function() {
+
+	for (i = 0; i < 10 ; i++) {
+
+		content += "<div id=\"c" + i + "\" class=\"column\">";
+
+		for ( z = 0; z < 10; z++) {
+
+			content +=("<div id=\"c" + i + "r" + z + "\" class=\"cell\">lorem</div>");
+
+}
+
+		content +=("</div>");
+
+}
+
+}
+someFunction();
+
+var elem = document.getElementById("grid");
+
+elem.innerHTML = content;
