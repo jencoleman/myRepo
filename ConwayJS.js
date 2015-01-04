@@ -1,3 +1,8 @@
+//even this won't work. I have no fucking clue why not
+
+document.getElementById("header").innerHTML = "TEST";
+
+
 //1st one
 var content = function() {
 }
