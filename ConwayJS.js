@@ -1,3 +1,39 @@
+//Creates the grid
+var content = "";
+
+var cellCounter = 0;
+
+var createGrid = function(a, b) {
+	
+	for (i = 0; i < a ; i++) {
+		
+		content += "<div id=\"c" + i + "\" class=\"column\">";
+		
+		for ( z = 0; z < b; z++) {
+			
+			content +=("<div id=\"c" + i + "r" + z + "\" class=\"cell\">" + cellCounter + "</div>");
+			
+			cellCounter++
+		}
+		content +=("</div>");
+	}
+return content;
+}
+//Creates the cell array
+var cellArray = [];
+
+var createArray = function(a, b) {
+	
+	for (i = 0; i < a ; i++) {
+	
+		for ( z = 0; z < b; z++) {
+	
+			cellArray.push([i][z]);
+		}
+	return cellArray;
+	}
+	
+}
 
 /*
 var content = function() {
@@ -66,8 +102,8 @@ content += "</div>";
 }
 
 setHtml();
-*/
-//5th one
+
+5th one
 var content = "";
 
 var someFunction = function(a, b) {
@@ -81,6 +117,8 @@ var someFunction = function(a, b) {
 			content +=("<div id=\"c" + i + "r" + z + "\" class=\"cell\">lorem</div>");
 
 }
+
+*/
 
 		content +=("</div>");
 
