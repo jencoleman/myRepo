@@ -34,18 +34,22 @@ elem.innerHTML = content;
 //Creates the cell array
 var cellArray = [];
 
-var createArray = function(a, b) {
-	
-	for (i = 0; i < a ; i++) {
-	
-		for ( z = 0; z < b; z++) {
-	
-			cellArray.push([i][z]);
+var createArray = function() {
+
+	for (i = 0; i < 10 ; i++) {
+
+		for ( z = 0; z < 10; z++) {
+
+			cellArray.push("[" + i + "][" + z + "]");
+			
 		}
-	return cellArray;
+		
 	}
 	
+	return cellArray;
 }
+
+createArray();
 
 /*
 var content = function() {
