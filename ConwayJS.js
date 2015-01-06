@@ -23,11 +23,6 @@ var createGrid = function() {
 	
 }
 
-createGrid();
-
-var elem = document.getElementById("grid");
-
-elem.innerHTML = content;
 
 //Creates the cell array
 var cellArray = [];
