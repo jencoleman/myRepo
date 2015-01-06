@@ -4,6 +4,7 @@
 <head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="ConwayStyle.css">
+		<script src="ConwayJS.js"> </script>
 </head>
 
 <body>
@@ -59,11 +60,17 @@
 	<div id="section2">
 	
 		<!--wrapper-->
-		<div id="grid">
-		
-		</div>
+		<div id="grid"></div>
 	</div>
-<script src="ConwayJS.js"> </script>
+	
+	
+	
+	<script>
+	
+		var elem = document.getElementById("grid");
+		elem.innerHTML = createGrid();	
+	
+	</script>
 </body>
 
 
