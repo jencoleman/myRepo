@@ -28,3 +28,10 @@ clear: both;
 .column {
 float: left;
 }
+/* live cell style*/
+.live {
+background-color: #FBCE33;
+border-style: solid;
+border-width: 1px;
+border-color: seashell;
+}
