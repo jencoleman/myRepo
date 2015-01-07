@@ -35,3 +35,12 @@ border-style: solid;
 border-width: 1px;
 border-color: seashell;
 }
+
+/* dead cell style*/
+.dead {
+background-color: #002E62;
+border-style: solid;
+border-width: 1px;
+border-color: seashell;
+}
+
