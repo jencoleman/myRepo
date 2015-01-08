@@ -1,5 +1,3 @@
-//Create grid & array
-
 var createArrayGrid = function() {
 
 	var elem = document.getElementById("grid");
