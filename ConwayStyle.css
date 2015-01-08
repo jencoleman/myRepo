@@ -18,8 +18,10 @@ float: left;
 .cell {
 height: 50px;
 width: 50px;
-background-color: Bisque;
+background-color: #FBCE33;
+
 }
+
 #grid:after {
 content: "";
 display: table;
@@ -28,12 +30,15 @@ clear: both;
 .column {
 float: left;
 }
-/* live cell style*/
+
+/*live cell style */
 .live {
 background-color: #FBCE33;
 border-style: solid;
 border-width: 1px;
 border-color: seashell;
+height: 18px;
+width: 18px;
 }
 
 /* dead cell style*/
@@ -43,4 +48,3 @@ border-style: solid;
 border-width: 1px;
 border-color: seashell;
 }
-
