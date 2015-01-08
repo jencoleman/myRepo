@@ -45,9 +45,9 @@ var createArray = function() {
 createArray();
 
 //Change cell class to live
-var itsAlive = function(){
-	var myCell = document.getElementById("[2][2]");
+var itsAlive = function(a){
+	var myCell = document.getElementById("a");
 	myCell.className = "live";
 }
 
-itsAlive();
+itsAlive("[2][2]");
