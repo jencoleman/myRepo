@@ -15,24 +15,28 @@ var createArrayGrid = function() {
 		for ( z = 0; z < 10; z++) {
 	
 				content +="<div id=\"[" + i + "][" + z + "]" + "\" class=\"cell\">" + cellCounter + "</div>";
+				
 				cellCounter++;
+				
 				cellArray.push("[" + i + "][" + z + "]");
-			}
-			content +=("</div>");
+			
 		}
+		
+			content +=("</div>");
+			
+		}
+		
 	elem.innerHTML = content;
-	}
 	
+	}
 
-createArrayGrid();
 
 //Change cell class to live
-var itsAlive = function(a){
+var itsAlive = function(){
 	
-	var myCell = document.getElementById(a);
+	var myCell = document.getElementById("[2][2]");
 	
 	myCell.className = "live";
 	
 }
 
-itsAlive("[2][2]");
