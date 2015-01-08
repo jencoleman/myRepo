@@ -14,9 +14,9 @@ var createArrayGrid = function() {
 		
 		for ( z = 0; z < 10; z++) {
 	
-				content +="<div id=\"" + i + "-" + z + "\" class=\"cell\">" + cellCounter + "</div>";
+				content +="<div id=\"" + i + "-" + z + "\"class=\"cell\">" + cellCounter + "</div>";
 				cellCounter++;
-				cellArray.push(i + "-" + z);
+				cellArray[i-z] = "Dead";
 			}
 			content +=("</div>");
 		}
