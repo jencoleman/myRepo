@@ -1,3 +1,5 @@
+var cellArray = [];
+
 var createArrayGrid = function() {
 
 	var elem = document.getElementById("grid");
@@ -6,7 +8,7 @@ var createArrayGrid = function() {
 	
 	var cellCounter = 0;
 	
-	var cellArray = [];
+	
 
 	for (i = 0; i < 10 ; i++) {
 	
@@ -31,5 +33,6 @@ var itsAlive = function(){
 	
 	myCell.className = "live";
 	
+	cellArray[2-2] = "live";
+	
 }
-
