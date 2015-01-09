@@ -13,17 +13,23 @@ var createArrayGrid = function() {
 	for (i = 0; i < 10 ; i++) {
 	
 		content += "<div id=\"c" + i + "\" class=\"column\">";
+		cellArray.push([]);
 		
 		for ( z = 0; z < 10; z++) {
 	
-				content +="<div id=\"" + i + "-" + z + "\"class=\"cell\">" + cellCounter + "</div>";
+				content +="<div id=\"" + i + "-" + z + "\"class=\"deadCell\">" + cellCounter + "</div>";
 				cellCounter++;
-				cellArray[i-z] = "Dead";
+				cellArray[i].push("deadCell");
+				
 			}
 			content +=("</div>");
 		}
 	elem.innerHTML = content;
+	console.log(cellArray);
+	
 	}
+	
+	
 
 
 //Change cell class to live
@@ -31,8 +37,9 @@ var itsAlive = function(){
 	
 	var myCell = document.getElementById("2-2");
 	
-	myCell.className = "live";
+	myCell.className = "liveCell";
 	
-	cellArray[2-2] = "live";
+	cellArray[2-2] = "liveCell";
 	
 }
+
