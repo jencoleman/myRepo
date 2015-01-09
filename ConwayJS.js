@@ -24,7 +24,6 @@ var createArrayGrid = function() {
 			content +=("</div>");
 		}
 	elem.innerHTML = content;
-	console.log(cellArray);
 	
 	}
 
