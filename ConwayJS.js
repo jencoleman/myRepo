@@ -74,7 +74,7 @@ var refreshGrid = (a, b) {
 for (i = 0; i < a; i++) {
 
 for (z = 0; z < b;i++) {
-if (cellArray[i] === "liveCell") {
+if (cellArray[i][z] === "liveCell") {
 
  var tempId = i + "-" + z;
  var tempElement = document.getElementById(tempId);
