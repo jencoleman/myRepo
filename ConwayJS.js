@@ -67,21 +67,61 @@ var itsDead = function(a, b){
 
 	}
 	
-// refreshGrid function
+	// refreshGrid function
+var refreshGrid = function() {
 
-var refreshGrid = (a, b) {
+for (i = 0; i < 10; i++) {
 
-for (i = 0; i < a; i++) {
+for (z = 0; z < 10;i++) {
 
-for (z = 0; z < b;i++) {
-if (cellArray[i][z] === "liveCell") {
+var currentCell = "cellArray[" + i + "][" + z + "]";
+if (currentCell == "liveCell") {
 
  var tempId = i + "-" + z;
  var tempElement = document.getElementById(tempId);
- var tempString = "Cell id " + tempId + " is live."
+ var tempString = "Cell id " + tempId + " is live.";
  
  console.log(tempString);
 }
 }
 }
 }
+
+	// refreshGrid function
+var refreshGrid = function() {
+
+for (i = 0; i < 10; i++) {
+
+for (z = 0; z < 10;i++) {
+
+var currentCell = cellArray[i][z];
+if (currentCell == "liveCell") {
+
+ var tempId = i + "-" + z;
+ var tempElement = document.getElementById(tempId);
+ var tempString = "Cell id " + tempId + " is live.";
+ 
+ console.log(tempString);
+}
+}
+}
+}
+
+var refreshGrid = function() {
+
+for (i = 0; i < 10; i++) {
+
+for (z = 0; z < 10;i++) {
+
+if (cellArray[i][z] == "liveCell") {
+
+ var tempId = i + "-" + z;
+ var tempElement = document.getElementById(tempId);
+ var tempString = "Cell id " + tempId + " is live.";
+ 
+ console.log(tempString);
+}
+}
+}
+}
+
