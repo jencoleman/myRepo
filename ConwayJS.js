@@ -36,7 +36,7 @@ var itsAlive = function(a, b){
 	
 	myCell.className = "liveCell";
 	
-	cellArray[a][b] = "deadCell";
+	cellArray[a][b] = "liveCell";
 
 	}
 	
@@ -53,3 +53,15 @@ var acornAlive = function(){
 	
 }
 
+//Change cell class to dead
+var itsDead = function(a, b){
+	
+	var id = a + "-" + b;
+	
+	var myCell = document.getElementById(id);
+	
+	myCell.className = "deadCell";
+	
+	cellArray[a][b] = "deadCell";
+
+	}
