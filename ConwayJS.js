@@ -103,5 +103,5 @@ var getLiveNeighborCells = function(a,b) {
 		liveCounter++;
 	}
 	}
-	console.log(liveCounter);
+	return(liveCounter);
 }
