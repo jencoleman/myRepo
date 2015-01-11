@@ -86,3 +86,10 @@ if (cellArray[i][z] == "liveCell") {
 }
 }
 
+//run function
+
+
+// run function
+var run = function() {
+	refreshGrid();
+}
