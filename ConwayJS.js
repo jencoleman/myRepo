@@ -72,50 +72,11 @@ var refreshGrid = function() {
 
 for (i = 0; i < 10; i++) {
 
-for (z = 0; z < 10;i++) {
-
-var currentCell = "cellArray[" + i + "][" + z + "]";
-if (currentCell == "liveCell") {
-
- var tempId = i + "-" + z;
- var tempElement = document.getElementById(tempId);
- var tempString = "Cell id " + tempId + " is live.";
- 
- console.log(tempString);
-}
-}
-}
-}
-
-	// refreshGrid function
-var refreshGrid = function() {
-
-for (i = 0; i < 10; i++) {
-
-for (z = 0; z < 10;i++) {
-
-var currentCell = cellArray[i][z];
-if (currentCell == "liveCell") {
-
- var tempId = i + "-" + z;
- var tempElement = document.getElementById(tempId);
- var tempString = "Cell id " + tempId + " is live.";
- 
- console.log(tempString);
-}
-}
-}
-}
-
-var refreshGrid = function() {
-
-for (i = 0; i < 10; i++) {
-
-for (z = 0; z < 10;i++) {
+for (z = 0; z < 10;z++) {
 
 if (cellArray[i][z] == "liveCell") {
 
- var tempId = i + "-" + z;
+ var tempId = "\"" + i + "-" + z + "\"";
  var tempElement = document.getElementById(tempId);
  var tempString = "Cell id " + tempId + " is live.";
  
