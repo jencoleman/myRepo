@@ -93,3 +93,15 @@ if (cellArray[i][z] == "liveCell") {
 var run = function() {
 	refreshGrid();
 }
+
+// figure out how many neighbors are live
+var getLiveNeighborCells = function(a,b) {
+	var neighborArray = [ cellArray[a-1][b], cellArray[a-1][b-1], cellArray[a][b-1], cellArray[a+1][b-1], cellArray[a+1][b], cellArray[a+1][b+1], cellArray[a][b+1], cellArray[a-1][b+1]];
+	var liveCounter = 0;
+	for (i=0; i < neighborArray.length; i++) {
+	if (neighborArray[i] == "liveCell") {
+		liveCounter++;
+	}
+	}
+	console.log(liveCounter);
+}
