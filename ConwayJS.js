@@ -17,7 +17,7 @@ var createArrayGrid = function() {
 		
 		for ( z = 0; z < 10; z++) {
 	
-				content +="<div id=\"" + i + "-" + z + "\"class=\"deadCell\">" + cellCounter + "</div>";
+				content +="<div id=\"" + i + "-" + z + "\"class=\"deadCell\" >" +cellCounter + "</div>";
 				cellCounter++;
 				cellArray[i][z] = "deadCell";
 			}
@@ -50,6 +50,9 @@ var acornAlive = function(){
 	itsAlive(5,4);
 	itsAlive(6,4);
 	itsAlive(7,4);
+	itsAlive(3,5);
+	itsAlive(4,5);
+	itsAlive(3,2);
 	
 }
 
@@ -66,7 +69,6 @@ var itsDead = function(a, b){
 
 	}
 	
-	// figure out how many neighbors are live
 	// figure out how many neighbors are live
 var getLiveNeighborCells = function(a, b) {
 	var liveCounter = 0;
@@ -114,3 +116,35 @@ var getLiveNeighborCells = function(a, b) {
 	
 	return liveCounter;
 	}
+
+ 
+ 	// refreshGrid function
+var refreshGrid = function() {
+
+for (i = 0; i < 10; i++) {
+
+for (z = 0; z < 10;z++) {
+
+if (cellArray[i][z] == "liveCell" && getLiveNeighborCells(i, z) < 2) {
+	cellArray[i][z] = "deadCell";
+	itsDead(i,z);
+	}
+
+if (cellArray[i][z] == "liveCell" && getLiveNeighborCells(i, z) > 3) {
+	cellArray[i][z] = "deadCell";
+	itsDead(i,z);
+	}
+	
+if (cellArray[i][z] == "deadCell" && getLiveNeighborCells(i,z) == 3) {
+cellArray[i][z] = "liveCell";
+	itsAlive(i,z);
+}
+	}
+	}
+	}
+
+
+// run function
+var run = function() {
+	refreshGrid();
+}
