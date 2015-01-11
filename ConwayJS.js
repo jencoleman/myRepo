@@ -67,39 +67,53 @@ var itsDead = function(a, b){
 	}
 	
 	// figure out how many neighbors are live
-var getLiveNeighborCells = function(a,b) {
-	var neighborArray = [ cellArray[a-1][b], cellArray[a-1][b-1], cellArray[a][b-1], cellArray[a+1][b-1], cellArray[a+1][b], cellArray[a+1][b+1], cellArray[a][b+1], cellArray[a-1][b+1]];
+var getLiveNeighborCells = function(a, b) {
 	var liveCounter = 0;
-	for (i=0; i < neighborArray.length; i++) {
-	if (neighborArray[i] == "liveCell") {
+	var counterArray = [];
+
+		if ( cellArray[a-1] !== undefined && cellArray[a-1][b] !== undefined) {
+		var tempString = (a-1) + "," + b;
+		counterArray.push(tempString);
+	}
+	if ( cellArray[a-1] !== undefined && cellArray[a-1][b-1] !== undefined) {
+		var tempString = (a-1) + "," + (b-1);
+		counterArray.push(tempString);
+	}
+	if ( cellArray[a] !== undefined && cellArray[a][b-1] !== undefined) {
+		var tempString = a + "," + (b-1);
+		counterArray.push(tempString);
+	}
+	if ( cellArray[a+1] !== undefined && cellArray[a+1][b-1] !== undefined) {
+		var tempString = (a+1) + "," + (b-1);
+		counterArray.push(tempString);
+	}
+	if ( cellArray[a+1] !== undefined && cellArray[a+1][b] !== undefined) {
+		var tempString = (a+1) + "," + b;
+		counterArray.push(tempString);
+	}
+	if ( cellArray[a+1] !== undefined && cellArray[a+1][b+1] !== undefined) {
+		var tempString = (a+1) + "," + (b+1);
+		counterArray.push(tempString);
+	}
+	if ( cellArray[a] !== undefined && cellArray[a][b+1] !== undefined) {
+		var tempString = a + "," + (b+1);
+		counterArray.push(tempString);
+	}
+	if ( cellArray[a-1] !== undefined && cellArray[a-1][b+1] !== undefined) {
+		var tempString = (a-1) + "," + (b+1);
+		counterArray.push(tempString);
+	}
+	
+	for(i=0; i < counterArray.length; i++) { 
+	
+	var value = counterArray[i].toString();
+	console.log(cellArray[2,2]);
+	if (cellArray[value] == "liveCell") {
 		liveCounter++;
+		
 	}
-	}
-	return liveCounter;
+
 	}
 	
-	
-	
-	// refreshGrid function
-var refreshGrid = function() {
-
-for (i = 1; i < 9; i++) {
-
-for (z = 1; z < 9; z++) {
-
-if (cellArray[i][z] == "liveCell") {
-getLiveNeighborCells(i,z);
- if(getLiveNeighborCells(i, z) < 2) {
-	cellArray[i][z] = "deadCell";
-	itsDead(i,z);
 	}
-
-}
-}
-}
-}
-
-// run function
-var run = function() {
-	refreshGrid();
-}
+	
