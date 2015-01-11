@@ -67,53 +67,50 @@ var itsDead = function(a, b){
 	}
 	
 	// figure out how many neighbors are live
+	// figure out how many neighbors are live
 var getLiveNeighborCells = function(a, b) {
 	var liveCounter = 0;
-	var counterArray = [];
 
-		if ( cellArray[a-1] !== undefined && cellArray[a-1][b] !== undefined) {
-		var tempString = (a-1) + "," + b;
-		counterArray.push(tempString);
+	if ( cellArray[a-1] !== undefined && cellArray[a-1][b] !== undefined) {
+		if (cellArray[a-1][b] == "liveCell") {
+			liveCounter++
+		}
 	}
 	if ( cellArray[a-1] !== undefined && cellArray[a-1][b-1] !== undefined) {
-		var tempString = (a-1) + "," + (b-1);
-		counterArray.push(tempString);
+		if (cellArray[a-1][b-1] == "liveCell") {
+		liveCounter++
+		}
 	}
 	if ( cellArray[a] !== undefined && cellArray[a][b-1] !== undefined) {
-		var tempString = a + "," + (b-1);
-		counterArray.push(tempString);
+		if (cellArray[a][b-1] == "liveCell") {
+		liveCounter++
+		}
 	}
 	if ( cellArray[a+1] !== undefined && cellArray[a+1][b-1] !== undefined) {
-		var tempString = (a+1) + "," + (b-1);
-		counterArray.push(tempString);
+		if (cellArray[a+1][b-1] == "liveCell") {
+		liveCounter++
+		}
 	}
 	if ( cellArray[a+1] !== undefined && cellArray[a+1][b] !== undefined) {
-		var tempString = (a+1) + "," + b;
-		counterArray.push(tempString);
+		if (cellArray[a+1][b] == "liveCell") {
+		liveCounter++
+		}
 	}
 	if ( cellArray[a+1] !== undefined && cellArray[a+1][b+1] !== undefined) {
-		var tempString = (a+1) + "," + (b+1);
-		counterArray.push(tempString);
+		if (cellArray[a+1][b+1] == "liveCell") {
+		liveCounter++
+		}
 	}
 	if ( cellArray[a] !== undefined && cellArray[a][b+1] !== undefined) {
-		var tempString = a + "," + (b+1);
-		counterArray.push(tempString);
+		if (cellArray[a][b+1] == "liveCell") {
+		liveCounter++
+		}
 	}
 	if ( cellArray[a-1] !== undefined && cellArray[a-1][b+1] !== undefined) {
-		var tempString = (a-1) + "," + (b+1);
-		counterArray.push(tempString);
+		if (cellArray[a-1][b+1] == "liveCell") {
+		liveCounter++
+		}
 	}
 	
-	for(i=0; i < counterArray.length; i++) { 
-	
-	var value = counterArray[i].toString();
-	console.log(cellArray[2,2]);
-	if (cellArray[value] == "liveCell") {
-		liveCounter++;
-		
+	return liveCounter;
 	}
-
-	}
-	
-	}
-	
