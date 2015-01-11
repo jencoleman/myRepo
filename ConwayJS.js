@@ -24,7 +24,6 @@ var createArrayGrid = function() {
 			content +=("</div>");
 		}
 	elem.innerHTML = content;
-	console.log(cellArray);
 	
 	}
 
@@ -67,34 +66,7 @@ var itsDead = function(a, b){
 
 	}
 	
-	// refreshGrid function
-var refreshGrid = function() {
-
-for (i = 0; i < 10; i++) {
-
-for (z = 0; z < 10;z++) {
-
-if (cellArray[i][z] == "liveCell") {
-
- var tempId = "\"" + i + "-" + z + "\"";
- var tempElement = document.getElementById(tempId);
- var tempString = "Cell id " + tempId + " is live.";
- 
- console.log(tempString);
-}
-}
-}
-}
-
-//run function
-
-
-// run function
-var run = function() {
-	refreshGrid();
-}
-
-// figure out how many neighbors are live
+	// figure out how many neighbors are live
 var getLiveNeighborCells = function(a,b) {
 	var neighborArray = [ cellArray[a-1][b], cellArray[a-1][b-1], cellArray[a][b-1], cellArray[a+1][b-1], cellArray[a+1][b], cellArray[a+1][b+1], cellArray[a][b+1], cellArray[a-1][b+1]];
 	var liveCounter = 0;
@@ -104,4 +76,30 @@ var getLiveNeighborCells = function(a,b) {
 	}
 	}
 	return liveCounter;
+	}
+	
+	
+	
+	// refreshGrid function
+var refreshGrid = function() {
+
+for (i = 1; i < 9; i++) {
+
+for (z = 1; z < 9; z++) {
+
+if (cellArray[i][z] == "liveCell") {
+getLiveNeighborCells(i,z);
+ if(getLiveNeighborCells(i, z) < 2) {
+	cellArray[i][z] = "deadCell";
+	itsDead(i,z);
+	}
+
+}
+}
+}
+}
+
+// run function
+var run = function() {
+	refreshGrid();
 }
