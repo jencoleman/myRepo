@@ -1,5 +1,8 @@
 var cellArray = [];
 
+
+
+
 var createArrayGrid = function() {
 
 	var elem = document.getElementById("grid");
@@ -117,6 +120,21 @@ var getLiveNeighborCells = function(a, b) {
 	return liveCounter;
 	}
 
+//setInterval variable
+
+var myRun;
+
+//run function
+var running = function() {
+	myRun = setInterval("refreshGrid()", 1000);
+
+}
+
+//stop function
+var stop = function() {
+	clearInterval(myRun);
+}
+
  
  	// refreshGrid function
 var refreshGrid = function() {
@@ -143,8 +161,3 @@ cellArray[i][z] = "liveCell";
 	}
 	}
 
-
-// run function
-var run = function() {
-	refreshGrid();
-}
