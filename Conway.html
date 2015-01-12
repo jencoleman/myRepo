@@ -29,15 +29,16 @@
 				<input type="radio" value="Michigan Blue/Maize">Michigan Blue/Maize</input>
 				<!--Layout: acorn or glider gun-->
 				<br>
-				<input type="radio" name="layout" value="Acorn">Acorn</input>
+				<input type="button" value="Acorn" onclick="acornAlive()"></input>
 				<input type="radio" name="layout" value="Glider Gun">Glider </input>
 				</fieldset>
 				<!--Controls fieldset, to include step, run, clear-->
 				<fieldset>
 				<legend>Controls</legend>
 				<input type="button" value="Step" onclick="refreshGrid()"></input>
-				<input type="button" value="Run" ></input>
-				<input type="button" value="Clear"></input>
+				<input type="button" value="Run" onclick="running()"></input>
+				<input type="button" value="Stop" onclick="stop()"></input>
+				<input type="button" value="Clear" onclick="createArrayGrid()"></input>
 				</fieldset>
 				
 				</form>
@@ -67,8 +68,7 @@
  
 <script>
 	createArrayGrid();
-	acornAlive();
-
+	
 	
 </script>
 </body>
