@@ -13,14 +13,14 @@ var createArrayGrid = function() {
 	
 	
 
-	for (i = 0; i < 10 ; i++) {
+	for (i = 0; i < 40 ; i++) {
 	
 		content += "<div id=\"c" + i + "\" class=\"column\">";
 		cellArray[i] = [];
 		
-		for ( z = 0; z < 10; z++) {
+		for ( z = 0; z < 20; z++) {
 	
-				content +="<div id=\"" + i + "-" + z + "\"class=\"deadCell\" >" +cellCounter + "</div>";
+				content +="<div id=\"" + i + "-" + z + "\"class=\"deadCell\" onclick=\"changeCell()\">" +cellCounter + "</div>";
 				cellCounter++;
 				cellArray[i][z] = "deadCell";
 			}
@@ -139,9 +139,9 @@ var stop = function() {
  	// refreshGrid function
 var refreshGrid = function() {
 
-for (i = 0; i < 10; i++) {
+for (i = 0; i < 40; i++) {
 
-for (z = 0; z < 10;z++) {
+for (z = 0; z < 20;z++) {
 
 if (cellArray[i][z] == "liveCell" && getLiveNeighborCells(i, z) < 2) {
 	cellArray[i][z] = "deadCell";
@@ -160,4 +160,7 @@ cellArray[i][z] = "liveCell";
 	}
 	}
 	}
+	
+var changeCell = function() {
 
+}
