@@ -9,47 +9,41 @@
 
 <body>
 	
-	<div id="header"><h1>Welcome to Conway's Game of Life!</h1></div>
+	<div id="header"><h1>Conway's Game of Life</h1></div>
 	
-	<!--Left side where the control buttons and additional information go-->
 	<div id="section1">
-	
-		<!--Game setup and play-->
-		
+		<div>
+			<!--Game setup and play-->
 			<h2>Game Set-up and Play:</h2>
 			<form>
 				<!--Size of the cells' environment-->
-				<fieldset>
+				<!-- <fieldset>
 					<legend>Create Your Environment</legend>
-				<input type="text" name="columns" size="5em" min="10" max="200">Columns (10 - 200)</input> <br>
-				<input type="text" name="rows" size="5em" min="10" max="100">Rows (10 - 100)</input> <br>
-				<!--Colors-->
-				<!--<input type="button" name="colorScheme1" value="Magenta/LightSalmon" ></input>
-				<input type="button" name="colorScheme2" value="Teal/Wheat"></input>
-				<input type="button" name="colorScheme3" value="Michigan Blue/Maize"></input>-->
-				<!--Layout: acorn or glider gun-->
-				<br>
-				<input type="button" value="Acorn" onclick="acornAlive()"></input>
-	
+						<input type="text" name="columns" size="5em" min="10" max="200">Columns (10 - 200)</input> <br>
+						<input type="text" name="rows" size="5em" min="10" max="100">Rows (10 - 100)</input> -->
+			
+					<!--Colors-->
+						<!--<input type="button" name="colorScheme1" value="Magenta/LightSalmon" ></input>
+						<input type="button" name="colorScheme2" value="Teal/Wheat"></input>
+						<input type="button" name="colorScheme3" value="Michigan Blue/Maize"></input>-->
+					<!--Layout: acorn or glider gun-->
+			
 				</fieldset>
-				<!--Controls fieldset, to include step, run, clear-->
+				<!--Game controls-->
 				<fieldset>
 				<legend>Controls</legend>
-				<input type="button" value="Step" onclick="refreshGrid()"></input>
-				<input type="button" value="Run" onclick="running()"></input>
-				<input type="button" value="Stop" onclick="stop()"></input>
-				<input type="button" value="Clear" onclick="createArrayGrid()"></input>
+					<input type="button" value="Acorn" onclick="acornAlive()"></input>
+					<input type="button" value="Step" onclick="refreshGrid()"></input>
+					<input type="button" value="Run" onclick="running()"></input>
+					<input type="button" value="Stop" onclick="stop()"></input>
+					<input type="button" value="Clear" onclick="createArrayGrid()"></input>
 				</fieldset>
 				
 				</form>
 				<!--Running information: generations, live cells-->
-	
-		
-		<!--Info re: Conway's Game of Life-->
-		<div></div>
-	
-		<!--Links to infe and more complex versions of the game-->
-		<div></div>
+				<!--Info re: Conway's Game of Life-->
+				<!--Links to infe and more complex versions of the game-->
+			</div>
 		
 	</div>
 	
@@ -57,18 +51,15 @@
 	<div id="section2">
 	
 		<!--wrapper-->
-		<div id="grid">
-			
-		</div>
+		<div id="grid"> </div>
 	
 	</div>
  
 <script>
 	createArrayGrid();
-	
-	
-</script>
-</body>
 
+</script>
+
+</body>
 
 </html>
